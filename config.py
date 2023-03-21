@@ -1,0 +1,42 @@
+
+# URL = "http://synyi-cdss-trigger-720-test.sy/api/trigger/Trigger"
+# DATABASE = "hdr_cdss_test"
+# USER = "gongqiaoshu"
+# PASSWORD = "123456"
+# HOST = "172.16.0.20"
+# PORT = "5432"
+# SQL = "select patient_id, visit_id, source_visit_id from visit.visit_record where dept_id = 62 or dept_id = 64 or dept_id = 94;"
+# SQL = "select vr.patient_id, vr.visit_id, vr.source_visit_id from visit.visit_record vr join visit.inpat_record ir on vr.visit_id = ir.inpat_id where vr.dept_id = ir.current_dept_id;"
+# SQL = "select vr.patient_id, vr.visit_id, vr.source_visit_id from visit.visit_record vr join visit.inpat_record ir on vr.visit_id = ir.inpat_id where vr.dept_id = ir.current_dept_id and vr.dept_id in (20,21,22,22,24,27,31,33,34,53,58,59,62,64,71,94,123,148,149,150,189,225,230,231,238,240,305);"
+
+# URL = "http://172.16.1.2:38235/api/trigger/Trigger"
+# DATABASE = "hdr_bank"
+# USER = "postgres"
+# PASSWORD = "765@#sy666"
+# HOST = "172.16.1.2"
+# PORT = "5432"
+# SQL = "select vr.patient_id, vr.visit_id, vr.source_visit_id from visit.visit_record  vr join visit.inpat_record ir on vr.visit_id = ir.inpat_id where (ir.current_dept_id = 62 or ir.current_dept_id = 144 or ir.current_dept_id = 266 or ir.current_dept_id = 266 or ir.current_dept_id = 277) and vr.out_time isnull;"
+# SQL = "select vr.patient_id, vr.visit_id, vr.source_visit_id from visit.visit_record  vr join visit.inpat_record ir on vr.visit_id = ir.inpat_id where (ir.current_dept_id = 277);"
+# SQL = "select patient_id, visit_id, source_visit_id from visit.visit_record where (dept_id = 64) and out_time isnull limit 100;"
+# Caprini评分量表
+# SQL = "select patient_id, visit_id, source_visit_id from visit.visit_record where (dept_id = 144 or dept_id = 277) and out_time isnull ;"
+# Padua评分量表
+# SQL = "select patient_id, visit_id, source_visit_id from visit.visit_record where (dept_id = 271) and out_time isnull ;"
+# SQL = "select patient_id, visit_id, source_visit_id from visit.visit_record where dept_name ~ 'CCU病房|核素介入治疗病区|内科|呼吸日间|急诊病房|肾脏风湿科|血液净化(病房)|血液移植病房|中医' and out_time isnull limit 400;"
+# SQL = "select patient_id, visit_id, source_visit_id from visit.visit_record where (dept_id = 271) and out_time isnull ;"
+
+URL = "http://172.16.70.15:25234/api/trigger/Trigger"
+DATABASE = "hdr_bank"
+USER = "postgres"
+PASSWORD = "765@#sy666"
+HOST = "172.16.1.2"
+PORT = "5432"
+# SQL = "select vr.patient_id, vr.visit_id, vr.source_visit_id from visit.visit_record  vr join visit.inpat_record ir on vr.visit_id = ir.inpat_id where (ir.current_dept_id = 62 or ir.current_dept_id = 144 or ir.current_dept_id = 266 or ir.current_dept_id = 266 or ir.current_dept_id = 277) and vr.out_time isnull;"
+SQL = "select vr.patient_id, vr.visit_id, vr.source_visit_id from visit.visit_record  vr join visit.inpat_record ir on vr.visit_id = ir.inpat_id where (ir.current_dept_id = 277);"
+# SQL = "select patient_id, visit_id, source_visit_id from visit.visit_record where (dept_id = 64) and out_time isnull limit 100;"
+# Caprini评分量表
+# SQL = "select patient_id, visit_id, source_visit_id from visit.visit_record where (dept_id = 144 or dept_id = 277) and out_time isnull ;"
+# Padua评分量表
+# SQL = "select patient_id, visit_id, source_visit_id from visit.visit_record where (dept_id = 271) and out_time isnull ;"
+# SQL = "select patient_id, visit_id, source_visit_id from visit.visit_record where dept_name ~ 'CCU病房|核素介入治疗病区|内科|呼吸日间|急诊病房|肾脏风湿科|血液净化(病房)|血液移植病房|中医' and out_time isnull limit 400;"
+# SQL = "select patient_id, visit_id, source_visit_id from visit.visit_record where (dept_id = 271) and out_time isnull ;"
